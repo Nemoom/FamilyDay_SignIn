@@ -24,6 +24,7 @@ namespace FestoFamilyDay
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             //Graphics g = e.Graphics;
+            //str = textBox1.Text;
             ShowCode(e.Graphics);
         }
         private void ShowCode(Graphics g)

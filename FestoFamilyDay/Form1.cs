@@ -8,13 +8,15 @@ using System.Text;
 using System.Windows.Forms;
 using Gma.QrCodeNet.Encoding;
 using Gma.QrCodeNet.Encoding.Windows.Render;
+using System.IO;
 
 namespace FestoFamilyDay
 {
     public partial class Form1 : Form
     {
-        int stepIndex = 0;
-        string str = "";
+        int stepIndex = 0;//签名登记进行到第几步，panel N置于最顶层。打印完成panel置顶，stepIndex=1
+        int ChildID = 1;//每打印一张加1
+        string str = "";//每个签到人员的唯一8位编号， 
         public Form1()
         {
             InitializeComponent();
@@ -174,6 +176,21 @@ namespace FestoFamilyDay
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
+
+        }
+
+        public void writeLog(string content, params object[] logStringFormatArgs)
+        {
+            string line = string.Empty;
+
+            const string LOG_DIR = "logs";
+            string logFilePath = Path.Combine(LOG_DIR, DateTime.Now.ToString("yyyy-MM-dd") + ".log");
+            if (!Directory.Exists(LOG_DIR)) Directory.CreateDirectory(LOG_DIR);
+            line = string.IsNullOrWhiteSpace(content) ? "\r\n" : DateTime.Now.ToString("HH:mm:ss") + ": " + String.Format(content.TrimEnd(), logStringFormatArgs) + "\r\n";
+            StreamWriter logFile = new StreamWriter(logFilePath, true, Encoding.UTF8);
+            logFile.Write(line);
+            logFile.Close();
+            logFile.Dispose();
 
         }
     }
