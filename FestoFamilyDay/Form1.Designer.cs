@@ -95,7 +95,7 @@
             this.textBox1.Location = new System.Drawing.Point(110, 121);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 30);
+            this.textBox1.Size = new System.Drawing.Size(258, 26);
             this.textBox1.TabIndex = 0;
             // 
             // label2
@@ -104,7 +104,7 @@
             this.label2.Location = new System.Drawing.Point(83, 98);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 23);
+            this.label2.Size = new System.Drawing.Size(88, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "输入姓名：";
             // 
@@ -114,7 +114,7 @@
             this.label1.Location = new System.Drawing.Point(83, 56);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 23);
+            this.label1.Size = new System.Drawing.Size(147, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Type in your name：";
             // 
@@ -211,7 +211,7 @@
             this.label3.Location = new System.Drawing.Point(83, 98);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 23);
+            this.label3.Size = new System.Drawing.Size(88, 18);
             this.label3.TabIndex = 1;
             this.label3.Text = "角色选择：";
             // 
@@ -221,7 +221,7 @@
             this.label4.Location = new System.Drawing.Point(83, 56);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(290, 23);
+            this.label4.Size = new System.Drawing.Size(230, 18);
             this.label4.TabIndex = 0;
             this.label4.Text = "Choose your cartoon character：";
             // 
@@ -405,7 +405,7 @@
             this.label5.Location = new System.Drawing.Point(50, 80);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 23);
+            this.label5.Size = new System.Drawing.Size(88, 18);
             this.label5.TabIndex = 1;
             this.label5.Text = "礼物选择：";
             // 
@@ -415,7 +415,7 @@
             this.label6.Location = new System.Drawing.Point(50, 38);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(182, 23);
+            this.label6.Size = new System.Drawing.Size(147, 18);
             this.label6.TabIndex = 0;
             this.label6.Text = "Choose a little gift：";
             // 
@@ -431,6 +431,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -448,7 +449,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
