@@ -530,7 +530,7 @@ namespace FestoFamilyDay
                         }
                     }
 
-                    //printCode();
+                    printCode();
                     writeCSV(textBox1.Text, str);
                     if (radioButton5.Checked)
                     {

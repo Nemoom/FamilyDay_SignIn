@@ -67,6 +67,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.panel_Name);
             this.panel1.Controls.Add(this.label2);
@@ -79,10 +81,13 @@
             // 
             // panel_Name
             // 
+            this.panel_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_Name.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_Name.BackgroundImage")));
-            this.panel_Name.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_Name.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel_Name.Controls.Add(this.textBox1);
-            this.panel_Name.Location = new System.Drawing.Point(159, 126);
+            this.panel_Name.Location = new System.Drawing.Point(147, 126);
             this.panel_Name.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Name.Name = "panel_Name";
             this.panel_Name.Size = new System.Drawing.Size(470, 230);
@@ -90,19 +95,20 @@
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(110, 121);
+            this.textBox1.Font = new System.Drawing.Font("MetaPlusLF", 13F);
+            this.textBox1.Location = new System.Drawing.Point(142, 119);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 30);
+            this.textBox1.Size = new System.Drawing.Size(186, 32);
             this.textBox1.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(83, 98);
+            this.label2.Font = new System.Drawing.Font("MetaPlusLF", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(105, 90);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 23);
@@ -112,7 +118,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 56);
+            this.label1.Font = new System.Drawing.Font("MetaPlusLF", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(105, 56);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(186, 23);
@@ -121,6 +128,8 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.tableLayoutPanel1);
             this.panel2.Controls.Add(this.label3);
@@ -193,7 +202,6 @@
             // 
             // radioButton4
             // 
-            this.radioButton4.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton4.AutoSize = true;
             this.radioButton4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("radioButton4.BackgroundImage")));
             this.radioButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -212,9 +220,9 @@
             this.label3.Location = new System.Drawing.Point(83, 98);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 23);
+            this.label3.Size = new System.Drawing.Size(290, 23);
             this.label3.TabIndex = 1;
-            this.label3.Text = "角色选择：";
+            this.label3.Text = "请选择一个你喜欢的卡通图案：";
             // 
             // label4
             // 
@@ -222,12 +230,14 @@
             this.label4.Location = new System.Drawing.Point(83, 56);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(290, 23);
+            this.label4.Size = new System.Drawing.Size(370, 23);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Choose your cartoon character：";
+            this.label4.Text = "Choose your favourite cartoon character：";
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.tableLayoutPanel2);
             this.panel3.Controls.Add(this.label5);
@@ -406,9 +416,9 @@
             this.label5.Location = new System.Drawing.Point(50, 80);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 23);
+            this.label5.Size = new System.Drawing.Size(270, 23);
             this.label5.TabIndex = 1;
-            this.label5.Text = "礼物选择：";
+            this.label5.Text = "请选择一个你喜欢的小礼物：";
             // 
             // label6
             // 
@@ -416,9 +426,9 @@
             this.label6.Location = new System.Drawing.Point(50, 38);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(182, 23);
+            this.label6.Size = new System.Drawing.Size(162, 23);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Choose a little gift：";
+            this.label6.Text = "Choose a snack：";
             // 
             // button1
             // 
@@ -459,15 +469,17 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(864, 953);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("MetaPlusLF", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Sign in";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel_Name.ResumeLayout(false);
